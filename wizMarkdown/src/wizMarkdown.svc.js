@@ -3,7 +3,7 @@
 .factory('wizMarkdownSvc', [function () {
 	var markdownSvc = new MarkdownDeep.Markdown();
 	markdownSvc.ExtraMode = true;
-	markdownSvc.SafeMode = false;
+	markdownSvc.SafeMode = true;
 	markdownSvc.NewWindowForExternalLinks = true;
 	markdownSvc.AutoHeadingIDs = true;
     markdownSvc.MarkdownDeepEditor = MarkdownDeepEditor;
